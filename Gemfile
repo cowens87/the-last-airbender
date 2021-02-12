@@ -23,9 +23,10 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
+  gem 'orderly'
+  gem 'rspec-rails'
   gem 'simplecov'
 end
 
