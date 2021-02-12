@@ -278,46 +278,12 @@
         "lines": [
           1,
           1,
-          1,
+          0,
           null,
           null,
           null,
           null,
           null,
-          null,
-          null
-        ]
-      },
-      "/Users/cydkyd/turing/3mod/independent_challenges/the-last-airbender/app/controllers/welcome_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/cydkyd/turing/3mod/independent_challenges/the-last-airbender/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/cydkyd/turing/3mod/independent_challenges/the-last-airbender/app/controllers/search_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/cydkyd/turing/3mod/independent_challenges/the-last-airbender/app/facades/members_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          2,
           null,
           null
         ]
@@ -343,22 +309,8 @@
           null,
           null
         ]
-      },
-      "/Users/cydkyd/turing/3mod/independent_challenges/the-last-airbender/app/poros/members_info.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          0,
-          0,
-          0,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1613149825
+    "timestamp": 1613152706
   }
 }

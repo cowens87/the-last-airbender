@@ -1,0 +1,56 @@
+<h1> Nation Details</h1>
+
+<section class="members">
+<%= "Total No. Members: #{@members.count}" %>
+</section>
+
+<% @members.first(25).each do |member| %>
+  <ul class='par_members'>
+    <p class='name'>
+     <h2><%= member.name %></h2>
+    </p>
+    <p class='image'>
+     <img src><%= member.photo %></img>
+    </p>
+    <h4> Friend or Foe: </h4> 
+    <p class='allies'>
+      <table id="allies">
+        <tr>
+          <th>Allies</th>
+        </tr>
+        <tr>
+          <% member.allies.map do |ally| %>
+            <td><%= ally  %></td>
+          </tr>
+        <% end %>
+      </table>
+    </p>
+    <p class='enemies'>
+      <table id="enemies">
+        <tr>
+          <th>Enemies</th>
+        </tr>
+        <tr>
+        <% if !member.enemies.empty? %>
+        <% member.enemies.map do |enemy| %>
+          <td><%= enemy  %></td>
+        </tr>
+        <% end %>
+      <% end %>
+      </table>
+    </p>
+    <p class='affiliations'>
+  <table id="affiliations">
+    <h4> Friend or Foe: </h4> 
+      <tr>
+        <th>Affiliations</th>
+      </tr>
+      <tr>
+       <% member.affiliations.map do |affiliation| %>
+        <td><%= affiliation  %></td>
+      </tr>
+    <% end %>
+  </table>
+    </p>
+  </ul>
+<% end %>

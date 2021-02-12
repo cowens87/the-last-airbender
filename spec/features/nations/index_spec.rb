@@ -9,9 +9,9 @@ RSpec.describe 'As an user', type: :feature do
       click_on 'Search For Members'
 
       expect(current_path).to eq(search_path)
-      expect(page).to have_content('Total No. Residents: 87')
-      expect(page).to have_css('.residents', count: 87)
-      expect(page).to have_css('.par_residents', count: 25)
+      expect(page).to have_content('Total No. Members: 87')
+      expect(page).to have_css('.members', count: 87)
+      expect(page).to have_css('.par_members', count: 25)
       within(first('.par_residents')) do
         expect(page).to have_css('.name')
         expect(page).to have_css('.image')

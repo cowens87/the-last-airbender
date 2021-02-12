@@ -1,13 +1,15 @@
 class MembersInfo
-  attr_reader :argument
+  attr_reader :name, 
+              :photo, 
+              :allies, 
+              :enemies, 
+              :affiliations
   
   def initialize(member_info)
-    require 'pry'; binding.pry
-    @name   = member_info[:name]
-    @photo  = member_info[:photoUrl]
-    @allies = member_info[:allies]
-    @allies = member_info[:allies]
-    @allies = member_info[:allies]
-
+    @name         = member_info[:name]
+    @photo        = member_info[:photoUrl]
+    @allies       = member_info[:allies]
+    @enemies      = member_info[:enemies]
+    @affiliations = member_info[:affiliation]
   end
 end
